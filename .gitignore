@@ -1,0 +1,14 @@
+__pycache__/
+*.egg-info/
+.venv/
+venv/
+output/
+*.mp4
+*.lyrics.txt
+*.words.json
+.pytest_cache/
+.DS_Store
+# keep your songs and footage out of git unless you want them public
+*.wav
+content/*
+!content/README.md

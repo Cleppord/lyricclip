@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lyricclip"
+version = "0.1.0"
+description = "Turn your own WAV into a 15-second vertical lyric video for TikTok"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = ["numpy>=1.22"]
+
+[project.optional-dependencies]
+whisper = ["faster-whisper>=1.0"]
+ui = ["gradio>=4.0", "faster-whisper>=1.0"]
+dev = ["pytest"]
+
+[project.scripts]
+lyricclip = "lyricclip.cli:main"
+
+[tool.setuptools]
+packages = ["lyricclip"]
